@@ -3,7 +3,8 @@
 * Fecha: 15 de Agosto de 2024
 * Materia: Sistemas Operativos
 * Tema: Gestión de memoria
-****************************************/
+* Topico: Diferencia entre usar o no punteros
+*********************************************/
 
 #include <stdlib.h>
 #include <stdio.h>
