@@ -15,15 +15,6 @@
 
 #include "librerialab.h"
 
-#define CAPACIDAD_INICIAL 4
-
-/*Creación Estructura de Datos para el Vector*/
-typedef struct vectorDinamico{
-        int capacidad;
-        int totalElementos;
-        void **elementos;
-} vectorDinamico;
-
 /*Inicialización de los valores del Vector, casting y reserva de memoria*/
 void vectorInicio(vectorDinamico *V){
         V->capacidad = CAPACIDAD_INICIAL;
