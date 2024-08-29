@@ -46,4 +46,3 @@ void setVector(vectorDinamico *V, int indice, void *elemento);
 void borrarVector(vectorDinamico *V, int indice);
 
 #endif
-#endif
