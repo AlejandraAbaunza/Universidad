@@ -112,10 +112,12 @@ int main(){
     borrarVector(&editor, a);
     a--;
   }
-
+  printf("\n");
+  printf("-------");
+  printf("\n");
+  
   setVector(&editor, 1, "Buenos");
   addVector(&editor, "Dias");
-
 
   printf("\n");
   for (i = 0; i < totalVector(&editor); i++)
