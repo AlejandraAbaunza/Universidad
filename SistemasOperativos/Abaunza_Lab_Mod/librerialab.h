@@ -44,3 +44,6 @@ void setVector(vectorDinamico *V, int indice, void *elemento);
 
 /*Borrar elemento según indice, redimensión*/
 void borrarVector(vectorDinamico *V, int indice);
+
+#endif
+#endif
