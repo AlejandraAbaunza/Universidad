@@ -4,8 +4,6 @@
 + Tema: fork
 **************************************/
 
-
-
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -13,7 +11,7 @@
 
 int main(int argc, char *argv[]){
   int x;
-  for(x=0; x < 3; x++){
+  for(x=0; x < 2; x++){
     fork();
     printf("The process ID (PID): %d \n", getpid());
   }
