@@ -6,6 +6,12 @@
 * Tópico: Comunicación Bi-Direccional
 *         ****** CLIENTE ******
 ******************************************/
+#include <string.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 #define FIFO_FILE "/tmp/fifo_twoway"
 int main() {
