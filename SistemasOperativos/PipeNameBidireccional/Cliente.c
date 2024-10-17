@@ -1,17 +1,21 @@
-/*****************************************
+/***********************************************************************************************
 * Autor: A. Abaunza
 * Fecha: Octubre 17 - 2024
 * Materia: Sistemas Operativos
 * Tema: Pipe Name 
+* Descripción: Este cliente está realizando una comunicación basada en Pipe Name bidireccional, 
+   la cual permite leer y escribir mensajes  
+* Tópico: Comunicación Bi-Direccional
 * Tópico: Comunicación Bi-Direccional
 *         ****** CLIENTE ******
-******************************************/
+************************************************************************************************/
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+
 
 #define FIFO_FILE "/tmp/fifo_twoway"
 int main() {
