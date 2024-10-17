@@ -1,8 +1,9 @@
-/*****************************************
+/***************************************************************************
 * Autor: A. Abaunza
 * Fecha: Octubre 17 - 2024
 * Materia: Sistemas Operativos
 * Tema: Pipe Name 
+* Descripción: Este servidor está realizando una comunicación basada en Pipe Name bidireccional, la cual permite leer y escribir mensajes  
 * Tópico: Comunicación Bi-Direccional
 *         ****** SERVIDOR ******
 ******************************************/
@@ -30,13 +31,7 @@ int main() {
       read_bytes = read(fd, readbuf, sizeof(readbuf));
       readbuf[read_bytes] = '\0';
       printf("FIFOSERVER: Received string: \"%s\" and length is %d\n", readbuf, (int)strlen(readbuf));
-      to_end = strcmp(readbuf, end);
-      
-      if (to_end == 0) {
-         close(fd);
-         break;
-      }
-      reverse_string(readbuf);
+     reverse_string(readbuf);
       printf("FIFOSERVER: Sending Reversed String: \"%s\" and length is %d\n", readbuf, (int) strlen(readbuf));
       write(fd, readbuf, strlen(readbuf));
       /*
@@ -44,6 +39,15 @@ int main() {
       process would retrieve the message
       */
       sleep(2);
+      to_end = strcmp(readbuf, end);
+     
+      
+      if (to_end == 0) {
+         close(fd);
+         break;
+      }
+     
+      
    }
    return 0;
 }
