@@ -1,12 +1,13 @@
-/***************************************************************************
+/**********************************************************************************************
 * Autor: A. Abaunza
 * Fecha: Octubre 17 - 2024
 * Materia: Sistemas Operativos
 * Tema: Pipe Name 
-* Descripción: Este servidor está realizando una comunicación basada en Pipe Name bidireccional, la cual permite leer y escribir mensajes  
+* Descripción: Este servidor está realizando una comunicación basada en Pipe Name bidireccional, 
+   la cual permite leer y escribir mensajes  
 * Tópico: Comunicación Bi-Direccional
 *         ****** SERVIDOR ******
-******************************************/
+***********************************************************************************************/
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
